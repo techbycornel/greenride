@@ -28,18 +28,25 @@ export default function Detail() {
           <View className="border-b border-[#c9c6c6] my-5 pb-5">
             <View className="flex flex-row justify-between">
               <Text className="text-lg font-interMedium text-[#323743FF]">
-                Vehicle Type:{" "}
+                Vehicle Type:
               </Text>
 
               <Text className="text-lg font-interBold mt-1">
                 Electric Sedan
               </Text>
+            </View>
+
+            <View className="flex flex-row justify-between">
+              <Text className="text-lg font-interMedium text-[#323743FF]">
+                Estimated arrival:
+              </Text>
+
               <Text className="text-lg font-interBold mt-1">8 mins</Text>
             </View>
 
             <View className="flex flex-row justify-between">
               <Text className="text-lg font-interMedium text-[#323743FF]">
-                Price:{" "}
+                Price:
               </Text>
 
               <Text className="text-lg font-interBold mt-1">$12.50</Text>
