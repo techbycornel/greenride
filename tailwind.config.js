@@ -1,0 +1,28 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ["Inter_400Regular"],
+        interMedium: ["Inter_500Medium"],
+        interBold: ["Inter_700Bold"],
+      },
+    },
+  },
+  safelist: [
+    {
+      pattern:
+        /(p|px|py|pt|pb|pl|pr|m|mx|my|mt|mb|ml|mr)-(0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96)/,
+    },
+    {
+      pattern: /(rounded)-(none|sm|md|lg|xl|2xl|3xl|full)/,
+    }
+  ],
+  plugins: [],
+};
